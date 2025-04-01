@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="guarderia de perros, cuidado de mascotas, perros, hotel canino, cuidado profesional de perros">
+    <meta name="description" content="La mejor guardería de perros, cuidamos a tu mejor amigo con amor y profesionalismo. Instalaciones de primera y personal certificado.">
+    <meta name="author" content="Guardería de Perros Team">
+    <title>Guardería Canina | Cuidado Profesional para tu Mascota</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --primary-color: #4e8cff;
+            --secondary-color: #ff6b6b;
+            --accent-color: #4ecdc4;
+            --dark-color: #343a40;
+            --light-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        .hero_area {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header_section {
+            background-color: white !important;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: var(--dark-color) !important;
+        }
+        
+        .navbar-brand img {
+            transition: transform 0.3s;
+        }
+        
+        .navbar-brand:hover img {
+            transform: rotate(15deg);
+        }
+        
+        .slider_section {
+            background: linear-gradient(135deg, rgba(78, 140, 255, 0.1) 0%, rgba(78, 205, 196, 0.1) 100%);
+            border-radius: 15px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding: 2rem;
+        }
+        
+        .carousel-item h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .carousel-item p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .img-fluid {
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .img-fluid:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .form-section {
+            background-color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 3rem;
+        }
+        
+        .form-control {
+            border: 1px solid #ddd;
+            transition: all 0.3s;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(78, 140, 255, 0.25);
+        }
+        
+        .btn {
+            padding: 0.5rem 1.5rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+            margin: 0.5rem;
+        }
+        
+        .btn-info {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-warning {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .btn-success {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .footer_section {
+            background-color: var(--dark-color);
+            margin-top: auto;
+            padding: 2rem 0;
+        }
+        
+        .footer_section a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer_section a:hover {
+            color: white;
+        }
+        
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+        
+        @media (max-width: 768px) {
+            .carousel-item h1 {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                width: 100%;
+                margin: 0.25rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero_area">
+        <!-- Header section -->
+        <header class="header_section bg-light py-3 shadow-sm">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="logo.png" alt="Logo Guardería" width="50" height="50" class="me-2">
+                    <span class="fw-bold">Guardería Canina</span>
+                </a>
+                <div>
+                    <span class="me-3"><i class="fas fa-phone me-2"></i>(123) 456-7890</span>
+                    <span><i class="fas fa-map-marker-alt me-2"></i>Calle Mascotas 123</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Slider section -->
+        <section class="slider_section container py-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h1 class="fw-bold">Cuidado Profesional <span class="text-primary">para tu Mascota</span></h1>
+                                <p class="lead">En nuestra guardería canina ofrecemos el mejor cuidado para tu perro con instalaciones de primera calidad y personal certificado. ¡Tu mejor amigo está en las mejores manos!</p>
+                                <div class="d-flex align-items-center mt-4">
+                                    <i class="fas fa-paw text-primary me-3 fa-2x"></i>
+                                    <div>
+                                        <h5 class="mb-0">Certificados en cuidado canino</h5>
+                                        <small>Profesionales con más de 10 años de experiencia</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="slider-img.png" alt="Cuidado profesional de perros" class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Main content -->
+        <main class="container py-4">
+            <section class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Nuestros Servicios</h2>
+                <p class="lead mx-auto" style="max-width: 700px;">Ofrecemos instalaciones seguras, personal capacitado y actividades recreativas para el bienestar de tu mascota. Con nosotros tu perro disfrutará como nunca.</p>
+                
+                <div class="row mt-5">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <i class="fas fa-home text-primary mb-3 fa-3x"></i>
+                                <h4 class="card-title">Alojamiento</h4>
+                                <p class="card-text">Amplias áreas de descanso con temperatura controlada para la comodidad de tu mascota.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <i class="fas fa-medal text-warning mb-3 fa-3x"></i>
+                                <h4 class="card-title">Entrenamiento</h4>
+                                <p class="card-text">Programas de entrenamiento básico y avanzado con métodos positivos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <i class="fas fa-heart text-danger mb-3 fa-3x"></i>
+                                <h4 class="card-title">Cuidado Especial</h4>
+                                <p class="card-text">Atención personalizada para perros mayores o con necesidades especiales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h2 class="text-center fw-bold mb-4"><i class="fas fa-dog me-2"></i>Gestión de Perros</h2>
+                <p class="text-center mb-4">Administra la información de los perros bajo nuestro cuidado</p>
+                
+                <form action="conexion.php" method="POST" class="row g-3">
+                    <div class="col-md-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-dog"></i></span>
+                            <input type="text" id="nombre" name="nombre" class="form-control shadow-sm rounded" placeholder="Nombre del perro" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="codigo" class="form-label">Código:</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-id-card"></i></span>
+                            <input type="text" id="codigo" name="codigo" class="form-control shadow-sm rounded" placeholder="Código identificador" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="raza" class="form-label">Raza:</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-paw"></i></span>
+                            <input type="text" id="raza" name="raza" class="form-control shadow-sm rounded" placeholder="Raza del perro" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="edad" class="form-label">Edad:</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-birthday-cake"></i></span>
+                            <input type="number" id="edad" name="edad" class="form-control shadow-sm rounded" placeholder="Edad en años" required>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center mt-4">
+                        <button type="submit" class="btn btn-info text-uppercase shadow"><i class="fas fa-eye me-2"></i>Ver</button>
+                        <button type="submit" class="btn btn-warning text-uppercase shadow"><i class="fas fa-edit me-2"></i>Editar</button>
+                        <button type="submit" class="btn btn-success text-uppercase shadow"><i class="fas fa-sync-alt me-2"></i>Actualizar</button>
+                        <button type="reset" class="btn btn-danger text-uppercase shadow"><i class="fas fa-trash-alt me-2"></i>Eliminar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer section -->
+        <footer class="footer_section bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5>Guardería Canina</h5>
+                        <p>Cuidamos a tu mejor amigo con amor y profesionalismo desde 2010.</p>
+                        <div class="social-icons">
+                            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5>Horario</h5>
+                        <p>Lunes a Viernes: 7am - 8pm</p>
+                        <p>Sábados: 9am - 6pm</p>
+                        <p>Domingos: Emergencias 24/7</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contacto</h5>
+                        <p><i class="fas fa-phone me-2"></i>(123) 456-7890</p>
+                        <p><i class="fas fa-envelope me-2"></i>info@guarderiacanina.com</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>Calle Mascotas 123, Ciudad</p>
+                    </div>
+                </div>
+                <hr class="my-4 bg-light">
+                <div class="text-center">
+                    <p class="mb-0">&copy; 2025 Guardería Canina. Todos los derechos reservados.</p>
+                    <a href="#" class="btn btn-secondary mt-3"><i class="fas fa-arrow-up me-2"></i>Ir arriba</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
